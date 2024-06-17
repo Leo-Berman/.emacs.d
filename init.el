@@ -2,8 +2,8 @@
 ;; M-x package-install RET flycheck RET
 ;; M-x flycheck-mode RET
 
+;;; Code:
 (add-to-list 'load-path "~/.emacs.d/packages")
-
 (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/") t)
 
 (package-initialize)
@@ -27,7 +27,7 @@
  '(global-modeline-region-mode 1)
  '(mlr-column-limit 79)
  
- ;; enables column and line numbner to display
+ ;; enables column and line number to display
  '(column-number-mode 1)
  '(line-number-mode 1)
 
@@ -66,8 +66,5 @@
 (add-hook 'python-mode-hook
           (lambda () (interactive)
             (column-marker-1 fill-column)))
-
-
-
 
 ;;; init.el ends here
