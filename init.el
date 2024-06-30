@@ -1,4 +1,6 @@
 ;;;; Necessary emacs to run on install
+;; M-x package-refresh-contents
+;; M-x package-list-packages
 ;; M-x package-install RET flycheck RET
 ;; M-x flycheck-mode RET
 
