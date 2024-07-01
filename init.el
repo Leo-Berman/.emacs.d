@@ -1,8 +1,9 @@
 ;;;; Necessary emacs to run on install
 ;; M-x package-refresh-contents
 ;; M-x package-list-packages
-;; M-x package-install RET flycheck RET
-;; M-x flycheck-mode RET
+;; M-x package-install RET flycheck RET - I think deprecated?
+;; M-x flycheck-mode RET - I think depreceted?
+;; M-x package-install zenburn-theme
 
 ;;; Code:
 (add-to-list 'load-path "~/.emacs.d/packages")
@@ -12,6 +13,8 @@
 (require 'modeline-region)
 (require 'flycheck)
 (add-hook 'after-init-hook #'global-flycheck-mode)
+
+(load-theme 'zenburn t)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
