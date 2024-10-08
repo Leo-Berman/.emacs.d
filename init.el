@@ -5,6 +5,10 @@
 ;; M-x flycheck-mode RET - I think depreceted?
 ;; M-x package-install zenburn-theme
 
+;; cuda libraries to c++
+(add-to-list 'auto-mode-alist '("\\.cu\\'" . c++-mode))
+
+
 ;;; Code:
 (add-to-list 'load-path "~/.emacs.d/packages")
 (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/") t)
